@@ -9,19 +9,26 @@ import "react-toastify/dist/ReactToastify.css";
 import logo from "../../Routes/logo.jpeg";
 import service1 from "../../utils/community-black-and-white-teamwork-people-passing-puzzle-pieces-to-each-other-1.png";
 import service2 from "../../utils/shine-support-operator-helps-to-solve-the-problem-1.png";
-import main from "../../utils/people-1979261.png";
 import "./Home.scss";
 // import { useNavigate } from 'react-router-dom';
 import { useRef } from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Link } from "react-router-dom";
+import market from "../../utils/market.jpeg";
+import headerImg from "../../utils/headerImg.jpeg"
+import it from "../../utils/it.jpeg"
+import nonit from "../../utils/non-it.jpeg"
+import webapp from "../../utils/web-app.jpeg"
 const Test = () => {
   const [showMenu, setShowMenu] = useState(false);
-  // const navigate = useNavigate();
+  
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
   const validationSchema = Yup.object().shape({
     name: Yup.string()
       .trim() // Remove leading and trailing spaces
@@ -108,7 +115,7 @@ const Test = () => {
           </a>
         </div>
         <div className="hero-image">
-          <img src={main} alt="Hero Background" />
+          <img src={headerImg} alt="Hero Background" />
         </div>
       </section>
 
@@ -122,25 +129,40 @@ const Test = () => {
           <div className="service-cards">
             <div className="service-card">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC-m71XlAWJi71kgthXBLjxzjdX8UjOhv3Fw&usqp=CAU"
+              src={it}
                 alt="Service 1"
               />
-              <p>IT Staff Augmentation</p>
+              <h3>Technology & Engineering</h3>
+              <p>Hire the best IT talent </p>
             </div>
             <div className="service-card">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVEbUynhl6N3deYSXBkBcJrjmtQPTVAJo6Iw&usqp=CAU"
+                src={nonit}
                 alt="Service 2"
               />
-              <p>Executive Search</p>
+              <h3>Non-IT / BPO </h3>
+              <p>Effective and Selected </p>
+
             </div>
+          
             <div className="service-card">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGfEph8twceHYSa7pf3l2vbINCmjasFnS00w&usqp=CAU"
-                alt="Service 3"
+                src= {market}
+                alt="Service 1"
               />
-              <p>Project Outsourcing</p>
+              <h3>Marketing 360</h3>
+              <p>Growth for people who want more </p>
+
             </div>
+            <div className="service-card">
+            <img
+              src= {webapp}
+              alt="Service 1"
+            />
+            <h3>Web/Application Development</h3>
+            <p>Bridging the Gap Between Ideas and Reality</p>
+
+          </div>
           </div>
         </div>
       </section>
@@ -342,7 +364,10 @@ const Test = () => {
         <div className="container">
           <div className="footer-content">
             <div className="footer-logo">
-              <img src={logo} alt="logo"></img>
+            <h2>Contact</h2>
+            <p>Address : New Delhi,India</p>
+            <p>Email : info@reqxtechnologies.com</p>
+            <p>Phone : +91 9643030859</p>
             </div>
             <div className="footer-links">
               <ul>
@@ -371,6 +396,12 @@ const Test = () => {
                 </li>
                 <li>
                   <XIcon />
+                </li>
+                <li>
+                <Link to = "https://in.linkedin.com/company/reqxtech?trk=public_profile_topcard-current-company">
+
+                <LinkedInIcon className="linkIcon"/>
+                </Link>
                 </li>
               </ul>
             </div>
