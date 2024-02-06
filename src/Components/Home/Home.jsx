@@ -22,6 +22,7 @@ import headerImg from "../../utils/headerImg.jpeg"
 import it from "../../utils/it.jpeg"
 import nonit from "../../utils/non-it.jpeg"
 import webapp from "../../utils/web-app.jpeg"
+import rpo from "../../utils/rpo.jpeg"
 const Test = () => {
   const [showMenu, setShowMenu] = useState(false);
   
@@ -145,15 +146,25 @@ const Test = () => {
 
             </div>
           
+        
             <div className="service-card">
-              <img
-                src= {market}
-                alt="Service 1"
-              />
-              <h3>Marketing 360</h3>
-              <p>Growth for people who want more </p>
+            <img
+              src= {rpo}
+              alt="Service 1"
+            />
+            <h3>RPO</h3>
+            <p>Optimizing talent acquisition with strategic staffing across industries to meet your needs</p>
 
-            </div>
+          </div>
+          <div className="service-card">
+          <img
+            src= {market}
+            alt="Service 1"
+          />
+          <h3>Marketing 360</h3>
+          <p>Growth for people who want more </p>
+
+        </div>
             <div className="service-card">
             <img
               src= {webapp}
