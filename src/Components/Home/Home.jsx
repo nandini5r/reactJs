@@ -6,11 +6,10 @@ import {  ToastContainer } from "react-toastify";
 import { useFormik } from "formik";
 import emailjs from "emailjs-com";
 import "react-toastify/dist/ReactToastify.css";
-// import logo from "../../Routes/logo.jpeg";
+import logo from "../../utils/newLogo.jpg";
 import service1 from "../../utils/community-black-and-white-teamwork-people-passing-puzzle-pieces-to-each-other-1.png";
 import service2 from "../../utils/shine-support-operator-helps-to-solve-the-problem-1.png";
 import "./Home.scss";
-// import { useNavigate } from 'react-router-dom';
 import { useRef } from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
@@ -32,7 +31,7 @@ const Test = () => {
 
   const validationSchema = Yup.object().shape({
     name: Yup.string()
-      .trim() // Remove leading and trailing spaces
+      .trim() 
       .required("Name is required")
       .min(2, "Name must have at least two characters")
       .matches(/^\S.*\S$/, "Leading or trailing spaces are not allowed"),
@@ -68,9 +67,8 @@ const Test = () => {
         .then(
           (result) => {
             console.log(result.text,"nknkn");
-            // Show success toast
+           
             toast.success("Form submitted successfully!", {
-              // position: toast.POSITION.TOP_CENTER,
             });
             formik.resetForm();
           },
@@ -83,13 +81,12 @@ const Test = () => {
 
   return (
     <div className="landing-page">
-      {/* <Header /> */}
       <div className={`main-header ${showMenu ? "show-menu" : ""}`}>
         <div className="logo">
-         <img src="" alt="logo"></img>
+         <img src={logo} alt="logo"></img>
         </div>
         <div className="hamburger-icon" onClick={toggleMenu}>
-          &#9776; {/* Hamburger icon */}
+          &#9776; 
         </div>
         <nav className={`nav-links ${showMenu ? "show-menu" : ""}`}>
           <a href="#about">About Us</a>
@@ -98,7 +95,6 @@ const Test = () => {
         </nav>
       </div>
 
-      {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
           <h1>ReqX Technologies</h1>
@@ -120,7 +116,6 @@ const Test = () => {
         </div>
       </section>
 
-      {/* Services Section */}
       <section className="services" id="services">
         <div className="services-content">
           <h2>Our Services</h2>
