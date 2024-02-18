@@ -6,7 +6,7 @@ import {  ToastContainer } from "react-toastify";
 import { useFormik } from "formik";
 import emailjs from "emailjs-com";
 import "react-toastify/dist/ReactToastify.css";
-import logo from "../../Routes/logo.jpeg";
+// import logo from "../../Routes/logo.jpeg";
 import service1 from "../../utils/community-black-and-white-teamwork-people-passing-puzzle-pieces-to-each-other-1.png";
 import service2 from "../../utils/shine-support-operator-helps-to-solve-the-problem-1.png";
 import "./Home.scss";
@@ -86,7 +86,7 @@ const Test = () => {
       {/* <Header /> */}
       <div className={`main-header ${showMenu ? "show-menu" : ""}`}>
         <div className="logo">
-          <img src={logo} alt="logo"></img>
+         <img src="" alt="logo"></img>
         </div>
         <div className="hamburger-icon" onClick={toggleMenu}>
           &#9776; {/* Hamburger icon */}
