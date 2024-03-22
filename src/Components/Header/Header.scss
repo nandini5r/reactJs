@@ -1,0 +1,86 @@
+$primary-color: #112f2f;
+$secondary-color: #ffffff;
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; // Ensure space between logo and hamburger icon
+//   background-image: linear-gradient(to right top, #8572a3, #7888be, #649ed2, #4db3dd, #43c8e0, #42c1ce, #45b9bc, #4ab1ab, #3b8e8b, #2d6d6b, #1f4d4d, #133030);
+  background-color: #112f2f;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 75px;
+
+  .logo {
+    margin-left: 30px;
+
+    img {
+      width: 4rem;
+      border-radius: 50%;
+    }
+  }
+
+  .hamburger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: $secondary-color;
+    margin-right: -87px; /* Adjusted for better spacing */
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center; // Center the navigation links
+    align-items: center;
+color: #d4af37;
+font-weight: bold;
+    Link {
+        color: white;
+      text-decoration: none;
+      margin: 0 0; // Adjust spacing between links
+    margin-right: 20px;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .icon{
+        margin-right: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+    .nav-links {
+      display: none;
+    }
+
+    .hamburger-icon {
+      display: flex;
+    }
+
+    &.show-menu {
+      .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjusted for better spacing */
+        left: 0;
+        width: 100%;
+        background-color: $primary-color; /* Match background color */
+        padding: 10px;
+        color: #d4af37;
+
+
+        a {
+          margin: 10px 0;
+          color: $secondary-color;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

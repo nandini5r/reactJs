@@ -1,0 +1,40 @@
+.container-main {
+  background-image: url("../../utils/HOME\ PAGE\ FRONT\ IMAGE.jpg");
+  height: 9 0vh;
+  width: 100%;
+  background-size: cover;
+
+  .section {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      color: #112f2f;
+      font-size: 4rem;
+      margin-top: 50px;
+      padding: 2%;
+      @media (max-width: 600px) {
+        font-size: 3rem;
+      }
+    }
+    p {
+      width: 40%;
+      color: #112f2f;
+      font-size: 1.5rem;
+      text-align: justify;
+      padding: 2.2%;
+      @media (max-width: 1000px) {
+        width: 90%;
+      }
+    }
+    button {
+      background-color: #112f2f;
+      width: 20%;
+      height: 3rem;
+      margin: 2.2%;
+      @media (max-width: 600px) {
+        width: 60%;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.about-us-container {
+    .banner {
+      position: relative;
+      height: 60vh; 
+      background-image: url('../../../utils/IMAGE1\ about.jpg   ');
+      background-size: cover;
+      background-position: center;
+      color: #dfd8bc;
+      font-size: 4rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  @media (max-width:1185px){
+    font-size: 3rem;
+
+  }
+      .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  
+ 
+    // Animation
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  
+    .banner {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+  
+   
+  }
