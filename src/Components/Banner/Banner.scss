@@ -1,5 +1,5 @@
 .container-main {
-  background-image: url("../../utils/HOME\ PAGE\ FRONT\ IMAGE.jpg");
+  background-image: url("../../utils/HOME\ IMG\ .jpeg");
   height: 9 0vh;
   width: 100%;
   background-size: cover;
@@ -9,7 +9,7 @@
     flex-direction: column;
 
     h1 {
-      color: #112f2f;
+      color: white;
       font-size: 4rem;
       margin-top: 50px;
       padding: 2%;
@@ -18,8 +18,8 @@
       }
     }
     p {
-      width: 40%;
-      color: #112f2f;
+      width: 50%;
+      color: white;
       font-size: 1.5rem;
       text-align: justify;
       padding: 2.2%;
