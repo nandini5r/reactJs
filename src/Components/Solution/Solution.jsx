@@ -1,11 +1,13 @@
 import React from "react";
 import "./Solution.scss";
+import { motion } from "framer-motion";
 import backImg from "../../utils/DIRECT HIRING  ANIMATED IMAGE.png";
 import ITimg from "../../utils/IT ANIMATED IMAGE.png";
 import img3 from "../../utils/EXECUTIVE ANIMATED IMAGE.png";
 import PersonAddAlt1Icon from "@mui/icons-material/PersonAddAlt1";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
+
 const Solution = () => {
   return (
     <div className="box_main">
@@ -23,43 +25,66 @@ const Solution = () => {
       </div>
 
       <div className="card-box-main">
-        <div className="cards-box">
-          <div className="back-card">
+        <motion.div
+          className="cards-box"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <motion.div
+            className="back-card"
+            whileHover={{ scale: 1.1 }}
+          >
             <img src={backImg} alt="back"></img>
-          </div>
-          <div className="front-card">
+          </motion.div>
+          <motion.div
+            className="front-card"
+            whileHover={{ scale: 1.1 }}
+          >
             <div>
               <MonetizationOnIcon className="icon" />
             </div>
             <div>
               <h2>Executive</h2>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="back-card2">
+          <motion.div
+            className="back-card2"
+            whileHover={{ scale: 1.1 }}
+          >
             <img src={ITimg} alt="back"></img>
-          </div>
-          <div className="front-card2">
+          </motion.div>
+          <motion.div
+            className="front-card2"
+            whileHover={{ scale: 1.1 }}
+          >
             <div>
               <LaptopMacIcon className="icon" />
             </div>
             <div>
               <h2>IT</h2>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="back-card3">
+          <motion.div
+            className="back-card3"
+            whileHover={{ scale: 1.1 }}
+          >
             <img src={img3} alt="back"></img>
-          </div>
-          <div className="front-card3">
+          </motion.div>
+          <motion.div
+            className="front-card3"
+            whileHover={{ scale: 1.1 }}
+          >
             <div>
               <PersonAddAlt1Icon className="icon" />
             </div>
             <div>
               <h2>Direct Hire</h2>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );
