@@ -1,205 +1,399 @@
-.main-itservices{
-.head {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    h3 {
-      color: red;
-      margin-top: 3rem;
-      margin-bottom: 2rem;
-    }
-    h1 {
-      color: #112f2f;
-      font-size: 3rem;
-      margin-bottom: 2rem;
-      @media(max-width:600px){
-      font-size: 2rem;
+// .main-itservices{
+// .head {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     h3 {
+//       color: red;
+//       margin-top: 3rem;
+//       margin-bottom: 2rem;
+//     }
+//     h1 {
+//       color: #112f2f;
+//       font-size: 3rem;
+//       margin-bottom: 2rem;
+//       @media(max-width:600px){
+//       font-size: 2rem;
 
+//       }
+//     }
+//     p {
+//       font-size: 1.5rem;
+//     //   padding: 4rem;
+//       text-align: justify;
+//       width: 80vw;
+//       @media(max-width:600px){
+//         font-size: 1rem;
+  
+//         }
+      
+//     }
+//   }
+//   .card1,.card2,.card3,.card4,.card5,.card6{
+//     background-size: cover;
+//     height: 60vh;
+//     margin: 6rem;
+//     padding: 2rem;
+//     border-radius: 10px;
+//     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+//     @media(max-width:680px){
+//      margin: 1rem;
+//     }
+    
+//    h1{
+//     color: white;
+//     background-color: #112f2f;
+//     padding: 2%;
+  
+      
+     
+//    }
+ 
+//     .section{
+
+//         display: flex;
+//         justify-content: space-between;
+//     .left{
+//         img{
+//             width: 500px;
+//             height: 400px;
+           
+//         }
+//     }
+//     .right{
+//         color: white;
+      
+//         p{
+//             margin-top:14rem;
+//             font-size: 25px;
+//             margin-left: 20px;
+//             background-color: #112f2f;
+//             padding: 2%;
+//             @media(max-width:1350px){
+//                 margin-top: 6rem;;
+//                 }
+//                 @media(max-width:880px){
+//                     font-size: 20px;
+//                 }
+//                 @media(max-width:680px){
+//                     font-size: 15px;
+//                 }
+//         }
+//         ul{
+
+//             font-size: 25px;
+//             margin: 2rem;
+//             background-color: #112f2f;
+//             padding: 4%;
+//             @media(max-width:1350px){
+//                 // margin-top:0px;
+//             font-size: 20px;
+
+//                 }
+//                 @media(max-width:1350px){
+//                     font-size: 16px;
+//                     } 
+//                     @media(max-width:400px){
+//                         font-size: 10px;
+//                     }
+
+//         }
+//         ol{
+           
+//             font-size: 25px;
+//             margin-top:13rem;
+
+//             background-color: #112f2f;
+//             padding: 2%;
+//             @media(max-width:880px){
+//                 font-size: 20px;
+//             }
+//             @media(max-width:1350px){
+//                 margin-top: 6rem;;
+//                 }
+//                 @media(max-width:400px){
+//                     font-size: 10px;
+//                 }
+               
+//            li{
+//             margin: 20px;
+//            } 
+//         }
+//         h2{
+     
+//             background-color: #112f2f;
+//             padding: 2%;
+//             margin-top: 10px;
+//             width: 50%;
+
+//         }
+//     }
+// }
+//   }
+//   .card1{
+//     background-image: url(../../../utils/pexels-essow-k-1042143.jpg);
+//     h1{
+//         width: 40%;
+//         @media (max-width:926px) {
+//         width: 40%;
+            
+//         }
+//         @media(max-width:400px){
+//             width: 80%;
+//            }
+//     }
+
+//   }
+//   .card2{
+//     background-image: url(../../../utils/AdobeStock_126016889.jpeg);
+//     h1{
+//         width: 30%;
+//         @media (max-width:926px) {
+//             width: 50%;
+                
+//             }
+//             @media(max-width:400px){
+//                 width: 80%;
+//                }
+//     }
+//   }
+//   .card3{
+//     background-image: url(../../../utils/i-2.webp);
+//     h1{
+//         width: 60%;
+//         @media(max-width:400px){
+//             width: 80%;
+//            }
+//     }
+//   }
+//   .card4{
+//     background-image: url(../../../utils/1_m6TqmUOUqUYA95MCee27iA.jpg);
+//     h1{
+//         width: 30%;
+//         @media (max-width:926px) {
+//             width: 50%;
+                
+//             }
+//             @media(max-width:400px){
+//                 width: 80%;
+//                }
+//     }
+//   }
+//    .card5{
+//     background-image: url(../../../utils/digital-icons-forming-the-cloud-storage-symbol-4xa844ypd3ywfa8q.jpg);
+//     h1{
+//         width: 30%;
+//         @media(max-width:400px){
+//             width: 80%;
+//            }
+//     }
+//   }
+//   .card6{
+//     background-image: url(../../../utils/n0X9DUy5e-C02qm7iKMcCP9BDPV3uXMAddYsRRGN7F8.jpg);
+//     h1{
+//         width: 45%;
+//         @media(max-width:400px){
+//             width: 80%;
+//            }
+//     }
+//   }
+// }
+
+
+
+// .services {
+//     padding: 50px 0;
+//     text-align: center;
+  
+//    h1{
+//     font-size: 3rem;
+//     margin-bottom: 4%;
+//     color: #112f2f;;
+//    }
+  
+//     .service-section {
+//       margin-bottom: 50px;
+  
+//       h3 {
+//         font-size: 1.5rem;
+//         margin-bottom: 20px;
+//         color: green;
+//       }
+  
+//       .service-grid {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-around;
+//         gap: 20px;
+  
+//         .service-card {
+//           background-color: #fff;
+//           padding: 20px;
+//           border-radius: 5px;
+//           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+//           transition: transform 0.5s ease-in-out;
+//           perspective: 1000px;
+//           cursor: pointer;
+  
+//           .card-front,
+//           .card-back {
+//             position: absolute;
+//             width: 100%;
+//             height: 100%;
+//             backface-visibility: hidden;
+//             transform: translateZ(0);
+//           }
+  
+//           .card-front {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: center;
+//             text-align: center;
+//           }
+  
+//           .card-back {
+//             transform: rotateY(180deg);
+//           }
+  
+//           &.flipped {
+//             transform: rotateY(180deg);
+//           }
+  
+//           .icon-container {
+//             margin-bottom: 10px;
+//             font-size: 2rem;
+//             img{
+//                 width: 100%;
+//                 height: 100%;
+//             }
+//           }
+//         }
+//       }
+//     }
+  
+//     @media (max-width: 768px) {
+//       .service-grid {
+//         flex-direction: column;
+//       }
+  
+//       .service-card {
+//         width: 100%;
+//       }
+//     }
+//   }
+ 
+
+/* Base styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .content{
+    p{
+        text-align: justify;
+    }
+  }
+  .services {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .services h1 {
+    font-size: 3rem;
+    margin-bottom: 4%;
+    color: #112f2f;
+  }
+  
+  .service-section {
+    margin-bottom: 50px;
+  
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: green;
+    }
+  
+    .service-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+  
+      .service-card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all 0.3s ease-in-out; /* Animate all properties on hover */
+        cursor: pointer;
+  
+        /* Remove flip animation styles */
+        perspective: none; /* Disable 3D perspective */
+  
+        .card-front,
+        .card-back {
+          position: relative; /* Remove absolute positioning */
+          transform: none; /* Remove initial rotation */
+        }
+  
+        &:hover {
+          /* Add hover animation styles */
+          transform: scale(1.1); /* Increase scale slightly on hover */
+          /* Add other hover effects as desired (e.g., box-shadow, border) */
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+  
+        .icon-container {
+          margin-bottom: 10px;
+          font-size: 2rem;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
       }
     }
-    p {
-      font-size: 1.5rem;
-    //   padding: 4rem;
-      text-align: justify;
-      width: 80vw;
-      @media(max-width:600px){
-        font-size: 1rem;
-  
-        }
-      
-    }
   }
-  .card1,.card2,.card3,.card4,.card5,.card6{
-    background-size: cover;
-    height: 60vh;
-    margin: 6rem;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    @media(max-width:680px){
-     margin: 1rem;
-    }
-    
-   h1{
-    color: white;
-    background-color: #112f2f;
-    padding: 2%;
   
-      
-     
-   }
- 
-    .section{
-
+  /* Media Queries (adjust as needed) */
+  @media (max-width: 768px) {
+    .service-grid {
         display: flex;
-        justify-content: space-between;
-    .left{
-        img{
-            width: 500px;
-            height: 400px;
-           
-        }
+        justify-content: center;
+        align-items: center;
+      flex-direction: column;
     }
-    .right{
-        color: white;
-      
-        p{
-            margin-top:14rem;
-            font-size: 25px;
-            margin-left: 20px;
-            background-color: #112f2f;
-            padding: 2%;
-            @media(max-width:1350px){
-                margin-top: 6rem;;
-                }
-                @media(max-width:880px){
-                    font-size: 20px;
-                }
-                @media(max-width:680px){
-                    font-size: 15px;
-                }
-        }
-        ul{
-
-            font-size: 25px;
-            margin: 2rem;
-            background-color: #112f2f;
-            padding: 4%;
-            @media(max-width:1350px){
-                // margin-top:0px;
-            font-size: 20px;
-
-                }
-                @media(max-width:1350px){
-                    font-size: 16px;
-                    } 
-                    @media(max-width:400px){
-                        font-size: 10px;
-                    }
-
-        }
-        ol{
-           
-            font-size: 25px;
-            margin-top:13rem;
-
-            background-color: #112f2f;
-            padding: 2%;
-            @media(max-width:880px){
-                font-size: 20px;
-            }
-            @media(max-width:1350px){
-                margin-top: 6rem;;
-                }
-                @media(max-width:400px){
-                    font-size: 10px;
-                }
-               
-           li{
-            margin: 20px;
-           } 
-        }
-        h2{
-     
-            background-color: #112f2f;
-            padding: 2%;
-            margin-top: 10px;
-            width: 50%;
-
-        }
-    }
-}
-  }
-  .card1{
-    background-image: url(../../../utils/pexels-essow-k-1042143.jpg);
-    h1{
-        width: 40%;
-        @media (max-width:926px) {
-        width: 40%;
-            
-        }
-        @media(max-width:400px){
-            width: 80%;
-           }
-    }
-
-  }
-  .card2{
-    background-image: url(../../../utils/AdobeStock_126016889.jpeg);
-    h1{
-        width: 30%;
-        @media (max-width:926px) {
-            width: 50%;
-                
-            }
-            @media(max-width:400px){
-                width: 80%;
-               }
+  
+    .service-card {
+        align-items: center;
+      width: 80%;
     }
   }
-  .card3{
-    background-image: url(../../../utils/i-2.webp);
-    h1{
-        width: 60%;
-        @media(max-width:400px){
-            width: 80%;
-           }
+  
+  /* Optional - Add color variations for different service cards (modify as needed) */
+  .service-card.it-recruitment {
+    background-color: #f5f5f5;
+    .icon-container {
+      color: #007bff; /* Blue for IT recruitment */
     }
   }
-  .card4{
-    background-image: url(../../../utils/1_m6TqmUOUqUYA95MCee27iA.jpg);
-    h1{
-        width: 30%;
-        @media (max-width:926px) {
-            width: 50%;
-                
-            }
-            @media(max-width:400px){
-                width: 80%;
-               }
+  
+  .service-card.software-development {
+    background-color: #f8f9fa;
+    .icon-container {
+      color: #28a745; /* Green for software development */
     }
   }
-   .card5{
-    background-image: url(../../../utils/digital-icons-forming-the-cloud-storage-symbol-4xa844ypd3ywfa8q.jpg);
-    h1{
-        width: 30%;
-        @media(max-width:400px){
-            width: 80%;
-           }
+  
+  .service-card.network-security {
+    background-color: #faf0f0;
+    .icon-container {
+      color: #dc3545;
     }
   }
-  .card6{
-    background-image: url(../../../utils/n0X9DUy5e-C02qm7iKMcCP9BDPV3uXMAddYsRRGN7F8.jpg);
-    h1{
-        width: 45%;
-        @media(max-width:400px){
-            width: 80%;
-           }
-    }
-  }
-}
-
-
-
+  
+  

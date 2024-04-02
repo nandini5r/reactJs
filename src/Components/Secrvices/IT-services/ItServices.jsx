@@ -1,120 +1,113 @@
 import React from "react";
-import "./ItServices.scss";
-// import img1 from "../../../utils/pexels-essow-k-1042143.jpg";
-const ItServices = () => {
-  return (
-    <div>
-      <div className="main-itservices">
-        <div className="head">
-          <h3>SOLUTIONS WE PROVIDE</h3>
-          <h1>Elevate Your Business with Tailored IT Services</h1>
-          <p>
-            ReqX Technologies provides a wide range of IT solutions customized
-            to meet diverse business requirements. With expertise in IT product
-            and AI development, we deliver innovative solutions tailored to your
-            needs. Our Customer AI solutions and chatbot proficiency enhance
-            customer interactions and satisfaction. Additionally, we excel in
-            mobile and enterprise app development, optimizing your business
-            processes for efficiency. Our IT consultation services help navigate
-            complex technology landscapes, enabling well-informed decisions.
-            Furthermore, our lead generation services drive business growth by
-            identifying potential customers. Committed to excellence, we deliver
-            high-quality services that align with your business goals for
-            success.
-          </p>
-        </div>
-        <div className="card1">
-          <h1>Mobile App Development</h1>
-          <div className="section">
-            <div className="left"></div>
-            <div className="right">
-              <p>
-                Android and iOS platforms feature unique development
-                environments like Android Studio and Xcode, with specific
-                programming languages such as Java/Kotlin for Android and
-                Swift/Objective-C for iOS. Each platform also hosts its
-                distribution channel—the Google Play Store for Android and the
-                Apple App Store for iOS—allowing de
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="card2">
-          <h1>Web Development</h1>
-          <div className="section">
-            <div className="right">
-              <h2>Services that we offer</h2>
+import ServiceCard from "../ServiceCard/ServiceCard";
+import img from "../../../utils/AdobeStock_126016889.jpeg";
+import img2 from "../../../utils/pexels-essow-k-1042143.jpg";
+import img3 from "../../../utils/1_m6TqmUOUqUYA95MCee27iA.jpg";
+import img4 from "../../../utils/i-2.webp";
+import img5 from "../../../utils/digital-icons-forming-the-cloud-storage-symbol-4xa844ypd3ywfa8q.jpg";
+import img6 from "../../../utils/n0X9DUy5e-C02qm7iKMcCP9BDPV3uXMAddYsRRGN7F8.jpg";
 
-              <ul>
-                <li> 1. Website Design</li>
-                <li> 2. Frontend Development</li>
-                <li>3. Backend Development</li>
-                <li>4. Database Management</li>
-                <li> 5. Server Configuration</li>
-                <li>6. Security Implementation</li>
-                <li> 7. Content Management System (CMS) Integration</li>
-                <li>8. E-commerce Solutions</li>
-                <li> 9. Ongoing Maintenance and Support</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="card3">
-          <h1>Cloud Implementation And Cost Optimisation</h1>
-          <div className="section">
-            <div className="right">
-              <ol>
-                <li> CLOUD CONSULTING SERVICES</li>
-                <li>CLOUD PROFESSIONAL SERVICES</li>
-                <li>CLOUD MANAGED SERVICES</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-        <div className="card4">
-          <h1>API INTEGRATION</h1>
-          <div className="section">
-            <div className="right">
-              <p>
-                API integration is the key to connecting software systems
-                effortlessly. It automates tasks, enhances efficiency, and
-                unlocks new opportunities for your business. Ready to streamline
-                workflows and boost productivity? Let's integrate APIs and
-                propel your business forward
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="card5">
-          <h1>Digital Marketing</h1>
-          <div className="section">
-            <div className="right">
-              <p>
-                Looking to expand your online reach? Enter digital marketing!
-                It's all about using online channels like social media, SEO, and
-                email to connect with your audience and grow your business.
-                Ready to boost your online presence and stand out from the
-                crowd? Let's get started!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="card6">
-          <h1>Web Application Development</h1>
-          <div className="section">
-            <div className="right">
-              <p>
-                Web app development creates software accessed via web browsers,
-                using HTML, CSS, and JavaScript for frontend and backend. It
-                includes planning, design, coding, testing, deployment, and
-                maintenance.
-              </p>
-            </div>
-          </div>
+import "./ItServices.scss";
+const itServicesData = [
+  {
+    title: "Software Development",
+    description:
+      "Our software development service crafts tailored solutions, leveraging cutting-edge technologies to meet your unique business needs. From intuitive interfaces to scalable architectures, we deliver efficient and innovative software that drives growth and enhances user experiences.",
+    icon: img, // Replace with your icon class
+    backgroundColor: "#f8f9fa",
+    iconColor: "#28a745",
+  },
+  {
+    title: "Application Development",
+    description:
+      "Android and iOS platforms feature unique development environments like Android Studio and Xcode, with specific programming languages such as Java/Kotlin for Android and Swift/Objective-C for iOS. Each platform also hosts its distribution channel—the Google Play Store for Android and the Apple App Store for iOS",
+    icon: img2,
+    backgroundColor: "#faf0f0",
+    iconColor: "#dc3545",
+  },
+
+  {
+    title: "API Integration",
+    description:
+      "API integration is the key to connecting software systems effortlessly. It automates tasks, enhances efficiency, and unlocks new opportunities for your business. Ready to streamline workflows and boost productivity? Let's integrate APIs and propel your business forward.",
+    icon: img3,
+    backgroundColor: "#f8f9fa",
+    iconColor: "#28a745",
+  },
+  {
+    title: "Cloud Implementation And Cost Optimisation",
+    description:
+      "Our comprehensive cloud consulting services encompass strategic planning, implementation, and ongoing management, ensuring seamless integration and maximum efficiency for your organization's cloud initiatives.",
+    icon: img4,
+    backgroundColor: "#f8f9fa",
+    iconColor: "#28a745",
+  },
+  {
+    title: "Digital Marketing",
+    description:
+      "Looking to expand your online reach? Enter digital marketing! It's all about using online channels like social media, SEO, and email to connect with your audience and grow your business. Ready to boost your online presence and stand out from the crowd? Let's get started!.",
+    icon: img5,
+    backgroundColor: "#f8f9fa",
+    iconColor: "#28a745",
+  },
+  {
+    title: "Web Application Development ",
+    description:
+      "Web app development creates software accessed via web browsers, using HTML, CSS, and JavaScript for frontend and backend. It includes planning, design, coding, testing, deployment, and maintenance.",
+    icon: img6,
+    backgroundColor: "#f8f9fa",
+    iconColor: "#28a745",
+  },
+];
+
+// const recruitmentServicesData = [
+//   {
+//     title: "Executive Search",
+//     description:
+//       "We find top executives for your company, focusing on leadership and fit.",
+//     icon: img,
+//     backgroundColor: "#e0e0e0",
+//     iconColor: "#333",
+//   },
+//   {
+//     title: "Talent Acquisition",
+//     description:
+//       "We source and attract qualified candidates for all your open positions.",
+//     icon: img, // Replace with your icon class
+//     backgroundColor: "#e8e8e8",
+//     iconColor: "#333",
+//   },
+//   {
+//     title: "HR Consulting",
+//     description:
+//       "We provide expert HR consulting services to optimize your talent management.",
+//     icon: img, // Replace with your icon class
+//     backgroundColor: "#ececec",
+//     iconColor: "#333",
+//   },
+// ];
+
+const Services = () => {
+  return (
+    <section className="services">
+      <div className="service-section">
+        <h1>IT Services</h1>
+        <div className="service-grid">
+          {itServicesData.map((service) => (
+            <ServiceCard key={service.title} {...service} />
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default ItServices;
+export default Services;
+// <div className="service-section">
+// <h1>Recruitment Services</h1>
+// <div className="service-grid">
+//   {recruitmentServicesData.map((service) => (
+//     <ServiceCard key={service.title} {...service} />
+//   ))}
+// </div>
+// </div>
