@@ -7,12 +7,15 @@ body, h1, h2, h3, p, ul, li {
 body {
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
+
 }
+
 
 /* Global Styles */
 .landing-page {
     background-color: #f8f8f8;
     color: #333;
+    overflow-x:hidden;
 }
 
 /* Header Styles */

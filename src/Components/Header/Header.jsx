@@ -14,16 +14,18 @@ const Header = () => {
   return (
     <div className={`main-header ${showMenu ? "show-menu" : ""}`}>
     <div className="logo">
-     <img src={logo} alt="logo"></img>
+    <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+          <img src={logo} alt="logo"></img>
+        </Link>
     </div>
 
     <div className='navbar'>
 
     <nav className={`nav-links ${showMenu ? "show-menu" : ""}`}>
-    <Link to={"/"}> Home</Link>
-    <Link to={"/services"}>Services</Link>
-    <Link to={"/about"}> About Us</Link>
-    <Link to={"/contact"}>Contact Us</Link>
+    <Link to={"/"} onClick={() => window.scrollTo(0, 0)}> Home</Link>
+    <Link to={"/services"} onClick={() => window.scrollTo(0, 0)}>Services</Link>
+    <Link to={"/about"} onClick={() => window.scrollTo(0, 0)}> About Us</Link>
+    <Link to={"/contact"} onClick={() => window.scrollTo(0, 0)}>Contact Us</Link>
 
     </nav>
     </div>
