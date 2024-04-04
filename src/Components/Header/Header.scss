@@ -5,7 +5,6 @@ $secondary-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between; // Ensure space between logo and hamburger icon
-//   background-image: linear-gradient(to right top, #8572a3, #7888be, #649ed2, #4db3dd, #43c8e0, #42c1ce, #45b9bc, #4ab1ab, #3b8e8b, #2d6d6b, #1f4d4d, #133030);
   background-color: #112f2f;
 
   position: sticky;
@@ -35,20 +34,20 @@ $secondary-color: #ffffff;
     display: flex;
     justify-content: center; // Center the navigation links
     align-items: center;
-color: #d4af37;
-font-weight: bold;
+    color: #d4af37;
+    font-weight: bold;
+
     Link {
-        color: white;
+      color: white;
       text-decoration: none;
-      margin: 0 0; // Adjust spacing between links
-    margin-right: 20px;
-      
+      margin: 0 20px; // Adjust spacing between links
       &:hover {
         text-decoration: underline;
       }
     }
-    .icon{
-        margin-right: 30px;
+
+    .icon {
+      margin-right: 30px;
     }
   }
 
@@ -61,27 +60,18 @@ font-weight: bold;
       display: flex;
     }
 
-    &.show-menu {
-      .nav-links {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Adjusted for better spacing */
-        left: 0;
-        width: 100%;
-        background-color: $primary-color; /* Match background color */
-        padding: 10px;
-        color: #d4af37;
-
-
-        a {
-          margin: 10px 0;
-          color: $secondary-color;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
+    .nav-links.show-menu {
+      display: flex;
+      flex-direction: column;
+      position: fixed; /* Change position to fixed */
+      top: 75px; /* Adjusted for better spacing */
+      left: 0;
+      width: 100%;
+      background-color: $primary-color; /* Match background color */
+      padding: 10px;
+      color: $secondary-color;
+      z-index: 101; /* Ensure menu overlaps page content */
     }
   }
 }
+
