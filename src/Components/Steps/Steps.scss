@@ -1,288 +1,168 @@
-.main-steps {
-    
-    .head {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       text-align: center;
-        h3 {
-            color: red;
-            margin-top: 3rem;
-            margin-bottom: 2rem;
-        }
-
-        h1 {
-            color: #112f2f;
-            font-size: 3rem;
-            margin-bottom: 2rem;
-        }
-
-        p {
-            font-size: 1.5rem;
-            width: 80%;
-            text-align: center;
-        }
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-steps .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main-steps{
+margin-bottom: 7%;
+  }
+  .main-steps .head h3 {
+    color: red;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .main-steps .head h1 {
+    color: #112f2f;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .main-steps .head p {
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .main-steps .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow cards to wrap to next line */
+    width: 100%;
+    padding-bottom: 80px;
+    margin-top: 4%;
+  }
+  
+  .main-steps .container .box-1,
+  .main-steps .container .box-2,
+  .main-steps .container .box-3 {
+    width: calc(30% - 2rem); /* Set card width to 30% minus spacing */
+    margin: 1rem; /* Add spacing between boxes */
+    position: relative;
+    flex-grow: 1; /* Allow cards to grow to fill available space */
+  }
+  
+  .main-steps .container .box-1::after,
+  .main-steps .container .box-2::after,
+  .main-steps .container .box-3::after {
+    content: '\2192';
+    font-size: 2rem;
+    color: #112f2f;
+    position: absolute;
+    top: 50%;
+    right: -1rem;
+    transform: translateY(-50%);
+  }
+  
+  .main-steps .container .box-1:last-child::after,
+  .main-steps .container .box-2:last-child::after,
+  .main-steps .container .box-3:last-child::after {
+    content: '';
+  }
+  
+  .main-steps .container .cardm {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 90%;
+    height: 150px;
+    margin-bottom: 2rem;
+    position: relative;
+    border-radius: 10%;
+  }
+  
+  @media (max-width: 1267px) {
+    .main-steps .container .cardm {
+      margin-bottom: 4%;
     }
-
-    .container {
-       
-        display: flex;
-        
-       justify-content: space-around;
-      align-items: center;
-      width: 100%;
-      padding-bottom: 80px;
-      
-
-      @media(max-width:1160px){
-          
-        flex-direction: column;
-         
-      }
-
-     
-        .box-1 {
-            height: 30vh;
-           width: 30vw;
-          margin-top: 5rem;
-          margin-bottom: 5rem;
-          flex-wrap: wrap;
-
-          @media(min-width:1000px){
-          margin-left: 150px;
-
-          }
-         
-          
-            .cardm {
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                width: 200px;
-                height: 150px;
-                position: absolute;
-                border-radius: 10%;
-                @media(max-width:1200px){
-                    width: 150px;
-                    height: 120px;
-                    }
-                .info{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    margin-top: 80px;
-                    text-align: center;
-                 
-                    h3{
-                        color: #112f2f;
-                    }
-                }
-                .badge {
-                    position: relative;
-                    padding: 5px;
-                    top: -18px;
-                    left: 180px;
-                    color: #112f2f;
-                    background-color: white;
-                    font-weight: bold;
-                    width: 40px;
-                    height: 40px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 50%;
-                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                }
-
-                .content {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    .icon {
-                        color: #112f2f;
-                        font-size: 4rem;
-                       
-                    }
-                }
-            }
-            .arrow-icon{
-                .arrow{
-                    font-size: 4rem;
-                    color: #112f2f;
-                    margin-left: 300px;
-                    margin-right: 80px;
-                    margin-top: 30px;
-                    @media(max-width:1190px){
-                        display: none;
-                    }
-                }
-            }
-          
-        }
-        .box-2 {
-            height: 30vh;
-            width: 30vw;
-          margin-top: 5rem;
-          margin-bottom: 5rem;
-            .cardm {
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                width: 200px;
-                height: 150px;
-                position: absolute;
-                border-radius: 10%;
-                @media(max-width:1200px){
-                    width: 150px;
-                    height: 120px;
-                    }
-                .info{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    margin-top: 80px;
-                    text-align: center;
-                    @media (max-width:500px) {
-                    margin-top: 30px;
-                        
-                    }
-                 
-                    h3{
-                        color: #112f2f;
-                    }
-                  
-                }
-                .badge {
-                    position: relative;
-                    padding: 5px;
-                    top: -18px;
-                    left: 180px;
-                    color: #112f2f;
-                    background-color: white;
-                    font-weight: bold;
-                    width: 40px;
-                    height: 40px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 50%;
-                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                }
-
-                .content {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    .icon {
-                        color: #112f2f;
-                        font-size: 4rem;
-                    }
-                }
-            }
-            .arrow-icon{
-                .arrow{
-                    font-size: 4rem;
-                    color: #112f2f;
-                    margin-left: 300px;
-                    margin-right: 80px;
-                    margin-top: 30px;
-                    @media(max-width:1190px){
-                        display: none;
-                    }
-                }
-            }
-          
-        }
-        .box-3 {
-            height: 30vh;
-          margin-top: 5rem;
-          margin-bottom: 5rem;
-          width: 30vw;
-            .cardm {
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                width: 200px;
-                height: 150px;
-                position: absolute;
-                border-radius: 10%;
-                @media(max-width:1200px){
-                    width: 150px;
-                    height: 120px;
-                    }
-                .info{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    margin-top: 80px;
-                    text-align: center;
-                 
-                    h3{
-                        color: #112f2f;
-                    }
-                }
-                .badge {
-                    position: relative;
-                    padding: 5px;
-                    top: -18px;
-                    left: 180px;
-                    color: #112f2f;
-                    background-color: white;
-                    font-weight: bold;
-                    width: 40px;
-                    height: 40px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 50%;
-                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                }
-
-                .content {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    .icon {
-                        color: #112f2f;
-                        font-size: 4rem;
-                    }
-                }
-            }
-           
-          
-        }
-
+  }
+  
+  @media (max-width: 1200px) {
+    .main-steps .container .cardm {
+      height: 120px;
     }
-
-}
-
-
-
-
-.cardm::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  border: 2px dashed #112f2f; 
-  animation: pulse 2s linear infinite; 
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 0.5;
   }
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
+  
+  .main-steps .container .cardm .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    text-align: center;
   }
-  100% {
-    transform: scale(1);
-    opacity: 0.5;
+  
+  @media (max-width: 500px) {
+    .main-steps .container .cardm .info {
+      margin-top: 30px;
+    }
   }
-}
+  
+  .main-steps .container .cardm .info h3 {
+    color: #112f2f;
+  }
+  
+  .main-steps .container .cardm .badge {
+    position: relative;
+    padding: 5px;
+    top: -18px;
+    left: 50%; /* Center badge horizontally */
+    transform: translateX(-50%);
+    color: #112f2f;
+    background-color: white;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .main-steps .container .cardm .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem; /* Add spacing between cards */
+  }
+  
+  .main-steps .container .cardm .content .icon {
+    color: #112f2f;
+    font-size: 4rem;
+  }
+  
+  .cardm::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px dashed #112f2f;
+    animation: pulse 2s linear infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+  }
+  

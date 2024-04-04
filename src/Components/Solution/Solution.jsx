@@ -25,49 +25,55 @@ const Solution = () => {
       </div>
 
       <div className="card-box-main">
+
         <motion.div
           className="cards-box"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <motion.div
-            className="back-card"
-            whileHover={{ scale: 1.1 }}
-          >
-            <img src={backImg} alt="back"></img>
-          </motion.div>
-          <motion.div
-            className="front-card"
-            whileHover={{ scale: 1.1 }}
-          >
-            <div>
-              <MonetizationOnIcon className="icon" />
-            </div>
-            <div>
-              <h2>Executive</h2>
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="back-card2"
-            whileHover={{ scale: 1.1 }}
-          >
-            <img src={ITimg} alt="back"></img>
-          </motion.div>
-          <motion.div
-            className="front-card2"
-            whileHover={{ scale: 1.1 }}
-          >
-            <div>
-              <LaptopMacIcon className="icon" />
-            </div>
-            <div>
-              <h2>IT</h2>
-            </div>
-          </motion.div>
-
-          <motion.div
+        <div className="card-box1">
+        <motion.div
+        className="back-card"
+        whileHover={{ scale: 1.1 }}
+      >
+        <img src={backImg} alt="back"></img>
+      </motion.div>
+      <motion.div
+        className="front-card"
+        whileHover={{ scale: 1.1 }}
+      >
+        <div>
+          <MonetizationOnIcon className="icon" />
+        </div>
+        <div>
+          <h2>Executive</h2>
+        </div>
+      </motion.div>
+        </div>
+         
+        <div className="card-box2">
+        <motion.div
+        className="back-card2"
+        whileHover={{ scale: 1.1 }}
+      >
+        <img src={ITimg} alt="back"></img>
+      </motion.div>
+      <motion.div
+        className="front-card2"
+        whileHover={{ scale: 1.1 }}
+      >
+        <div>
+          <LaptopMacIcon className="icon" />
+        </div>
+        <div>
+          <h2>IT</h2>
+        </div>
+      </motion.div>
+        </div>
+        
+        <div className="card-box3">
+        <motion.div
             className="back-card3"
             whileHover={{ scale: 1.1 }}
           >
@@ -84,6 +90,8 @@ const Solution = () => {
               <h2>Direct Hire</h2>
             </div>
           </motion.div>
+        </div>
+          
         </motion.div>
       </div>
     </div>

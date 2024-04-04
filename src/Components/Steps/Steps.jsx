@@ -1,7 +1,6 @@
 import React from "react";
 import "./Steps.scss";
 import PersonAddAlt1Icon from "@mui/icons-material/PersonAddAlt1";
-import ShortcutIcon from "@mui/icons-material/Shortcut";
 import AddCommentIcon from "@mui/icons-material/AddComment";
 import NoteAddIcon from "@mui/icons-material/NoteAdd";
 const Steps = () => {
@@ -30,9 +29,7 @@ const Steps = () => {
               <p>We'll understand exactly what you're looking for.</p>
             </div>
           </div>
-          <div className="arrow-icon">
-            <ShortcutIcon className="arrow" />
-          </div>
+        
         </div>
         <div className="box-2">
           <div className="cardm">
@@ -50,9 +47,7 @@ const Steps = () => {
               </p>
             </div>
           </div>
-          <div className="arrow-icon">
-            <ShortcutIcon className="arrow" />
-          </div>
+         
         </div>
         <div className="box-3">
           <div className="cardm">

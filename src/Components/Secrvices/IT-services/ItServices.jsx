@@ -6,7 +6,8 @@ import img3 from "../../../utils/1_m6TqmUOUqUYA95MCee27iA.jpg";
 import img4 from "../../../utils/i-2.webp";
 import img5 from "../../../utils/digital-icons-forming-the-cloud-storage-symbol-4xa844ypd3ywfa8q.jpg";
 import img6 from "../../../utils/n0X9DUy5e-C02qm7iKMcCP9BDPV3uXMAddYsRRGN7F8.jpg";
-
+import img7 from "../../../utils/it.jpeg"
+import img8 from "../../../utils/non-it.jpeg"
 import "./ItServices.scss";
 const itServicesData = [
   {
@@ -60,32 +61,25 @@ const itServicesData = [
   },
 ];
 
-// const recruitmentServicesData = [
-//   {
-//     title: "Executive Search",
-//     description:
-//       "We find top executives for your company, focusing on leadership and fit.",
-//     icon: img,
-//     backgroundColor: "#e0e0e0",
-//     iconColor: "#333",
-//   },
-//   {
-//     title: "Talent Acquisition",
-//     description:
-//       "We source and attract qualified candidates for all your open positions.",
-//     icon: img, // Replace with your icon class
-//     backgroundColor: "#e8e8e8",
-//     iconColor: "#333",
-//   },
-//   {
-//     title: "HR Consulting",
-//     description:
-//       "We provide expert HR consulting services to optimize your talent management.",
-//     icon: img, // Replace with your icon class
-//     backgroundColor: "#ececec",
-//     iconColor: "#333",
-//   },
-// ];
+const recruitmentServicesData = [
+  {
+    title: "IT Recruitment",
+    description:
+      "IT recruitment is a specialized service focused on sourcing, attracting, and hiring top talent for positions within the information technology sector. With expertise in identifying candidates with the necessary technical skills and cultural fit,",
+    icon: img7,
+    backgroundColor: "#e0e0e0",
+    iconColor: "#333",
+  },
+  {
+    title: "Non -IT Recruitment",
+    description:
+      " Non-IT recruitment services focus on understanding the unique requirements of each job role and matching qualified candidates with suitable opportunities in various sectors such as healthcare, finance, retail, manufacturing, hospitality, and more. ",
+    icon: img8, // Replace with your icon class
+    backgroundColor: "#e8e8e8",
+    iconColor: "#333",
+  },
+ 
+];
 
 const Services = () => {
   return (
@@ -97,17 +91,17 @@ const Services = () => {
             <ServiceCard key={service.title} {...service} />
           ))}
         </div>
+        <div className="service-section">
+          <h1>RPO And Staffing</h1>
+          <div className="service-grid">
+            {recruitmentServicesData.map((service) => (
+              <ServiceCard key={service.title} {...service} />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
 export default Services;
-// <div className="service-section">
-// <h1>Recruitment Services</h1>
-// <div className="service-grid">
-//   {recruitmentServicesData.map((service) => (
-//     <ServiceCard key={service.title} {...service} />
-//   ))}
-// </div>
-// </div>
