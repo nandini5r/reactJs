@@ -12,7 +12,7 @@ body {
     text-align: center;
   }
   .main-steps{
-margin-bottom: 7%;
+margin-bottom: 15%;
   }
   .main-steps .head h3 {
     color: red;
@@ -29,7 +29,7 @@ margin-bottom: 7%;
   .main-steps .head p {
     font-size: 1.5rem;
     width: 80%;
-    text-align: center;
+   text-align: justify;;
   }
   
   .main-steps .container {
@@ -96,7 +96,7 @@ margin-bottom: 7%;
     align-items: center;
     flex-direction: column;
     margin-top: 80px;
-    text-align: center;
+    text-align: justify;
   }
   
   @media (max-width: 500px) {
