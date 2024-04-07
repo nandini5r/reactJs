@@ -19,6 +19,9 @@ body {
     margin-bottom: 4%;
     color: #112f2f;
     margin-top: 5%;
+    @media(max-width:800px){
+        font-size: 2rem;
+    }
   }
   
   .service-section {

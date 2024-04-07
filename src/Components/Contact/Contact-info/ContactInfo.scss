@@ -20,10 +20,18 @@
           color: #112f2f;
           font-size: 3rem;
           margin-bottom: 2rem;
+          @media(max-width:800px){
+            font-size: 2rem;
+          }
         }
         p {
           font-size: 1.5rem;
           width: 80vw;
+          text-align: justify;
+          @media(max-width:800px){
+            font-size: 1rem;
+            margin-bottom: 20px;
+          }
         }
       }
     .info {

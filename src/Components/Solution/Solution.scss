@@ -21,6 +21,9 @@
       margin-bottom: 2rem;
       width: 80%;
       text-align: center;
+      @media(max-width:800px){
+        font-size: 2rem;
+      }
     }
     p {
       font-size: 1.5rem;
