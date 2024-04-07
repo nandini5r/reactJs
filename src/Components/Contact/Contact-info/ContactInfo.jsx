@@ -31,14 +31,14 @@ Your move! Let's connect
         <PhoneIcon className='icon'/>
       <div>
         <h2>01141422406</h2>
-        <h2>+91 9643885549</h2>
-        <p>Mon to Fri 10am to &pm</p>
+         <h2>+91 9643030859</h2>
+        <p>Mon to Fri 10am to 7pm</p>
       </div>
     </div>
     <div className='info'>
       <MailIcon className='icon' />
       <div>
-        <h2>reqxtechnologies@gmail.com</h2>
+        <h2>info@reqxtechnologies.com</h2>
         <p>Send us your query anytime!</p>
       </div>
     </div>
