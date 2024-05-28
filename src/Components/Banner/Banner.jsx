@@ -1,10 +1,42 @@
 import React, { useEffect, useState } from "react";
 import "./Banner.scss";
 import { motion } from "framer-motion";
-
+import DialogBox from "../Dialog/Dialog";
 const Banner = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [hasDialogDisplayed, setHasDialogDisplayed] = useState(false);
 
+  const handleClose = () => {
+    setOpen(false);
+    localStorage.setItem('dialogDisplayed', 'true');
+  };
+
+  const handleConfirm = () => {
+    handleClose();
+  };
+  useEffect(() => {
+    const clearLocalStorage = () => {
+      localStorage.clear();
+    };
+
+    const intervalId = setInterval(clearLocalStorage, 2* 60 * 60 * 1000); // 2 hours
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
+  useEffect(() => {    const dialogDisplayed = localStorage.getItem('dialogDisplayed');
+    if (!hasDialogDisplayed && !dialogDisplayed) {
+      setOpen(true);
+      setHasDialogDisplayed(true);
+    }
+  }, [hasDialogDisplayed]);
+
+  const dialogActions = [
+    { label: 'Close', color: 'secondary', handler: handleConfirm },
+  ];
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -36,6 +68,13 @@ const Banner = () => {
           Learn More
         </motion.button>
       </motion.div>
+      <DialogBox
+      open={open}
+      handleClose={handleClose}
+      title='Website Under Maintenance'
+      content="Our website is currently undergoing scheduled maintenance to improve your experience. During this period, you may still access and use the site as usual. We apologize for any inconvenience and appreciate your patience. Thank you for understanding! "
+      actions={dialogActions}
+    />
     </div>
   );
 };
