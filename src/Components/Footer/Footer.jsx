@@ -16,7 +16,7 @@ const Footer = () => {
               <h2>Contact</h2>
               <p>Address : New Delhi,India</p>
               <p>Email : info@reqxtechnologies.com</p>
-              <p>Phone : +91 9643030859</p>
+              <p>Phone : +91 9650954146</p>
             </div>
             <div className="footer-links">
               <ul>
