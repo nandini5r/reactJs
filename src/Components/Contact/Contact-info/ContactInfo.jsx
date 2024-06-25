@@ -31,7 +31,7 @@ Your move! Let's connect
         <PhoneIcon className='icon'/>
       <div>
         <h2>01141422406</h2>
-         <h2>+91 9643030859</h2>
+         <h2>+91 9650954146</h2>
         <p>Mon to Fri 10am to 7pm</p>
       </div>
     </div>
